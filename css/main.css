@@ -162,11 +162,49 @@ ul li::before {
   position: absolute;
 }
 
+
+
+
+.container-altern {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
 h2 {
   font-size: 2em;
 }
 
-label {
+
+
+.projects-container { 
+display: flex;
+justify-content: space-around;
+gap: 2em;
+  
+}
+
+.project-card {
+  width: 20em;
+  height: 20em;
+  box-shadow: 5px 5px 20px black;
+  border: 0.1em solid black;
+  
+}
+
+
+
+
+
+.contact-section{
+  background: rgb(172, 178, 174);
+  color: #3f684c;
+}
+
+
+
+.label {
   display: block;
   font-size: 1.2em;
   margin-bottom: 0.5em;
