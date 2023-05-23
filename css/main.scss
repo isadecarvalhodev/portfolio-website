@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;700&display=swap');
+body {
+    background:#3f684c;
+    margin: 0;
+    font-family: 'Roboto Mono';
+}
+
+.navbar {
+    background: rgb(255, 255, 255);
+    padding: 1em;
+
+    .logo {
+        text-decoration: none;
+
+        font-weight: bolder;
+        color: rgb(10, 1, 1);
+        font-size: 1.4em;
+
+        span {
+            color: #3f684c;
+        }
+    }
+nav { 
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 30%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 1em;
+
+    ul.primary-nav {
+        margin-top: 5em;
+    }
+
+    li {
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: right;
+
+            &:hover {
+                font-weight: bolder;
+            }
+        }
+    }
+
+}
+
+.container {
+    display: flex;
+    place-content: space-between;
+}
+
+.mobile-menu {
+    cursor: pointer;
+    width: 20px;
+
+}
+
+}
+a {
+    color: rgb(30, 43, 30);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+.hero {
+    text-align: center;
+}
+
+.left-col {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(91, 87, 87);
+    letter-spacing: .3em;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 1.3em;
+    margin-top: .2em;
+}
+
+.primary-cta {
+    background: rgb(243, 247, 243);
+    color: black;
+    text-decoration: none;
+    padding: .6em 1.3em;
+    font-size: 1.1em;
+    border-radius: 5em;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.icone-cv {
+    width: 20px;
+    height: 20px;
+    margin-right: .5em;
+}
+
+.balococute .svg {
+    width: 50px;
+    height: 30px;
+    position: relative;
+    right: 20%;
+
+  }
+
+
+#balocolady{
+    position: absolute;
+    right: 0;
+    top: 0%;
+    transform-origin: 50% 100%;
+    animation: swing 3s ease-in-out infinite;
+    
+
+}
+
+
+@keyframes swing{
+    0% {
+        transform: rotate(10deg);
+      }
+      50% {
+        transform: rotate(-10deg);
+      }
+      100% {
+        transform: rotate(10deg);
+      }
+}
+
+.skills-section {
+    background: rgb(172, 178, 174);
+    color: #3f684c;
+}
+
+ul {
+    margin:0;
+    padding-left: .1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19em,1fr));
+
+
+    li {
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+        }
+
+    }
+    
+}
+
+h2 {
+    font-size: 2em;
+}
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+input,textarea {
+    width: 100%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #aabeb0;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3em;
+    border: none;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    display: inline-block;
+    padding: .8em 2em;
+    width: unset;
+    cursor: pointer;
+
+}
+
+
+
+.mobile-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+.menu-open {
+    display: block !important;
+  }
+
+@media only screen and (min-width: 768px) {
+
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+        
+
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: rgb(48, 46, 46);
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+            display: flex;
+            font-size: 1em;
+            padding: .1em ;
+
+        }
+
+        a {
+            color: rgb(253, 253, 253);
+            font-size: 1em;
+            padding: .1em 1em;
+        }
+        
+        ul.primary-nav {
+            margin: 0;
+
+        }
+
+        li.current a {
+            font-weight: bold;
+
+        }
+
+        li.current-contact a {
+            color: #3f684c;
+            border: 3px #3f684c;
+            font-weight: bold;
+            border-radius: 5em;
+            margin-top: -.2em;
+
+            &:hover {
+                background: #3f684c;
+                color: #aabeb0;
+            }
+
+
+
+
+        }
+
+
+    }
+
+   
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 10em;
+
+    }
+
+    .hero .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        .left-col {
+            margin: 3em 3em 0 5em;
+        }
+
+        h1 {
+            font-size: 3em;
+            width: 90%;
+        }
+
+    }
+    
+}
+
+}
+
