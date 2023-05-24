@@ -24,11 +24,11 @@ body {
   display: none;
   position: fixed;
   z-index: 99;
-  width: 60%;
+  width: 30%;
   right: 0;
   top: 0;
   background: rgb(99, 103, 92);
-  height: 100vh;
+  height: 55vh;
   padding: 1em;
 }
 .navbar nav ul.primary-nav {
@@ -61,8 +61,13 @@ a {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: -9px;
+  padding: 0.1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19em,1fr));
+  align-content: space-between;
+  justify-content: end;
+  justify-items: end;
 }
 
 section {
@@ -154,6 +159,9 @@ ul {
   padding-left: 0.1em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
+  align-content: end;
+  justify-content: end;
+  justify-items: end;
 }
 ul li {
   font-size: 1.1em;
@@ -214,7 +222,10 @@ gap: 2em;
 }
 
 
-
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 
 
@@ -258,7 +269,7 @@ input[type=submit] {
 
 .mobile-menu-exit {
   float: right;
-  margin: 0.5em;
+  margin: 0.1em;
   cursor: pointer;
 }
 
@@ -295,7 +306,7 @@ input[type=submit] {
     padding: 0.1em 1em;
   }
   .navbar nav ul.primary-nav {
-    margin: 0;
+    margin: 3em;
   }
   .navbar nav li.current a {
     font-weight: bold;
