@@ -106,6 +106,10 @@ h2 {
   display: inline-block;
 }
 
+
+
+
+
 .icone-cv {
   width: 20px;
   height: 20px;
@@ -163,10 +167,27 @@ ul li::before {
 }
 
 
+.subtext {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+
+.project-img {
+
+  margin-top: 1em;
+  width: 100%;
+  max-width: 30em;
+  border-radius: 10px;
+
+}
+
+
+
 
 
 .container-altern {
-  padding: 1em;
+  padding: 0.5em;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -186,12 +207,14 @@ gap: 2em;
 }
 
 .project-card {
-  width: 20em;
-  height: 20em;
+  width: 80%;
+  margin-bottom: 2em;
   box-shadow: 5px 5px 20px black;
-  border: 0.1em solid black;
   
 }
+
+
+
 
 
 
@@ -288,6 +311,12 @@ input[type=submit] {
     background: #3f684c;
     color: #10b241;
   }
+
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media only screen and (min-width: 768px) and (min-width: 1080px) {
   .container {
@@ -309,6 +338,49 @@ input[type=submit] {
     font-size: 3em;
     width: 90%;
   }
+
 }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .projects-container {
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 40%;
+    margin-bottom: 2em;
+  }
+  .project-section .projects-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .project-card {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-bottom: 2em;
+    box-shadow: 5px 5px 20px black;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1025px) {
+  .project-section .projects-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .project-card {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-bottom: 2em;
+    box-shadow: 5px 5px 20px black;
+  }
+}
+
 
 /*# sourceMappingURL=main.css.map */
