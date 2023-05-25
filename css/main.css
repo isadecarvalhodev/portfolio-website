@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;700&display=swap");
+
 body {
   background: #3f684c;
   margin: 0;
@@ -11,15 +12,18 @@ body {
   padding: 1em;
 
 }
+
 .navbar .logo {
   text-decoration: none;
   font-weight: bolder;
   color: rgb(0, 0, 0);
   font-size: 1.4em;
 }
+
 .navbar .logo span {
   color: #6db975;
 }
+
 .navbar nav {
   display: none;
   position: fixed;
@@ -31,10 +35,12 @@ body {
   height: 55vh;
   padding: 1em;
 }
+
 .navbar nav ul.primary-nav {
   margin-top: 5em;
-  
+
 }
+
 .navbar nav li a {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -43,13 +49,16 @@ body {
   font-size: 1.3em;
   text-align: right;
 }
+
 .navbar nav li a:hover {
   font-weight: bolder;
 }
+
 .navbar .container {
   display: flex;
   place-content: space-between;
 }
+
 .navbar .mobile-menu {
   cursor: pointer;
   width: 20px;
@@ -64,7 +73,7 @@ ul {
   margin: -9px;
   padding: 0.1em;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19em,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
   align-content: space-between;
   justify-content: end;
   justify-items: end;
@@ -131,7 +140,7 @@ h2 {
 }
 
 #balocolady {
-  
+
   right: 0;
   top: 0%;
   transform-origin: 50% 100%;
@@ -142,13 +151,16 @@ h2 {
   0% {
     transform: rotate(10deg);
   }
+
   50% {
     transform: rotate(-10deg);
   }
+
   100% {
     transform: rotate(10deg);
   }
 }
+
 .skills-section {
   background: rgb(172, 178, 174);
   color: #3f684c;
@@ -163,12 +175,14 @@ ul {
   justify-content: end;
   justify-items: end;
 }
+
 ul li {
   font-size: 1.1em;
   margin-bottom: 1em;
   margin-left: 2em;
   position: relative;
 }
+
 ul li::before {
   content: "";
   position: absolute;
@@ -190,14 +204,8 @@ ul li::before {
 
 }
 
-
-
-
-
 .container-altern {
-  padding: 0.5em;
-  display: flex;
-  flex-direction: column;
+  padding: 2.5em;
   text-align: left;
 }
 
@@ -205,33 +213,50 @@ h2 {
   font-size: 2em;
 }
 
-
-
-.projects-container { 
-display: flex;
-justify-content: space-around;
-gap: 2em;
-  
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
 }
 
 .project-card {
   width: 80%;
   margin-bottom: 2em;
   box-shadow: 5px 5px 20px black;
-  
 }
-
 
 hr {
   margin-left: 20px;
   margin-right: 20px;
 }
 
+.button-container {
+  text-align: center;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #9e4dce;
+}
 
 
 
 
-.contact-section{
+
+
+
+.contact-section {
   background: rgb(172, 178, 174);
   color: #3f684c;
 }
@@ -244,7 +269,8 @@ hr {
   margin-bottom: 0.5em;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 0.8em;
   margin-bottom: 1em;
@@ -278,14 +304,18 @@ input[type=submit] {
 }
 
 @media only screen and (min-width: 768px) {
-  .mobile-menu, .mobile-menu-exit {
+
+  .mobile-menu,
+  .mobile-menu-exit {
     display: none;
   }
+
   .navbar .container {
     display: grid;
     grid-template-columns: 180px auto;
     justify-content: unset;
   }
+
   .navbar nav {
     display: flex;
     justify-content: space-between;
@@ -295,22 +325,27 @@ input[type=submit] {
     width: 100%;
     padding: 0;
   }
+
   .navbar nav ul {
     display: flex;
     font-size: 1em;
     padding: 0.1em;
   }
+
   .navbar nav a {
     color: rgb(106, 22, 22);
     font-size: 1em;
     padding: 0.1em 1em;
   }
+
   .navbar nav ul.primary-nav {
     margin: 3em;
   }
+
   .navbar nav li.current a {
     font-weight: bold;
   }
+
   .navbar nav li.current-contact a {
     color: #3f684c;
     border: 3px #3f684c;
@@ -318,6 +353,7 @@ input[type=submit] {
     border-radius: 5em;
     margin-bottom: -0.2em;
   }
+
   .navbar nav li.current-contact a:hover {
     background: #3f684c;
     color: #10b241;
@@ -329,22 +365,27 @@ input[type=submit] {
     align-items: center;
   }
 }
+
 @media only screen and (min-width: 768px) and (min-width: 1080px) {
   .container {
     width: 1080px;
     margin: 0 auto;
   }
+
   section {
     padding: 0.1em;
   }
+
   .hero .container {
     display: flex;
     justify-content: space-between;
     text-align: left;
   }
+
   .hero .container .left-col {
     margin: 3em 3em 0 5em;
   }
+
   .hero .container h1 {
     font-size: 3em;
     width: 90%;
@@ -361,6 +402,7 @@ input[type=submit] {
     width: 40%;
     margin-bottom: 2em;
   }
+
   .project-section .projects-container {
     display: flex;
     justify-content: center;
