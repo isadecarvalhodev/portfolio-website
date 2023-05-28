@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Isa de Carvalho Portfolio</title>
 
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -380,7 +380,8 @@
             <div class="contact-left">
                 <h2>Contact</h2>
 
-                <form action="">
+                <form action="" id="contact-form">
+
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name">
 
@@ -401,6 +402,17 @@
 
     </section>
 
+    <footer>
+        <p>
+
+
+
+
+
+        </p>
+
+    </footer>
+
     <script>
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -417,6 +429,45 @@
             });
         });
 
+
+
+        const form = document.getElementById("contact-form");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+            const name = formData.get("name");
+            const email = formData.get("email");
+            const message = formData.get("message");
+
+            const data = {
+                name: name,
+                email: email,
+                message: message
+            };
+
+            fetch("submit-url", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+                .then(response => {
+                    // Handle the response from the server
+                    if (response.ok) {
+                        'mensagem send!'
+                        // Perform any necessary actions (e.g., show a success message)
+                    } else {
+                        'error'
+                        // Handle the error (e.g., display an error message)
+                    }
+                })
+                .catch(error => {
+                    'something when wrong! '
+                });
+        });
     </script>
 
 </body>
