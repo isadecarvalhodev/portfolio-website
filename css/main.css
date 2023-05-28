@@ -65,7 +65,7 @@ body {
 }
 
 a {
-  color: rgb(70, 113, 70);
+  color: rgb(0, 0, 0);
 }
 
 ul {
@@ -99,6 +99,10 @@ section {
   letter-spacing: 0.3em;
 }
 
+
+.subhead {
+  text-align: right;
+}
 p {
   align-items: flex-end;
 }
@@ -109,11 +113,25 @@ h2 {
   margin-top: 0.2em;
 }
 
-.primary-cta {
+.custom-class {
+  padding: 100px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding-left: 2em; 
+  gap: 2em;
+}
+
+
+.primary-cta  {
   background: rgb(243, 247, 243);
   color: rgb(0, 0, 0);
   text-decoration: none;
-  padding: 0.6em 1.3em;
+  padding: 0.6em 1.3em 0.6em;
+
+  
   font-size: 1.1em;
   border-radius: 5em;
   font-weight: 700;
@@ -125,22 +143,39 @@ h2 {
 
 
 .icone-cv {
-  width: 20px;
-  height: 20px;
+  width: 2em;
+  height: 2em;
   margin-right: 0.5em;
+  margin-left: 1em;
 }
 
-.balococute .svg {
-  width: 90px;
-  height: 60px;
 
-  position: relative;
-  right: 20%;
+
+
+.balococute {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
+  overflow: visible;
+ 
 }
+
+.svg-container {
+  width: 100%;
+  padding:2em;
+  overflow: visible;
+}
+
+.svg-container svg {
+  width: 90%;
+  height: auto;
+  
+}
+
+
 
 #balocolady {
-
+  position: absolute;
   right: 0;
   top: 0%;
   transform-origin: 50% 100%;
@@ -333,7 +368,7 @@ input[type=submit] {
   }
 
   .navbar nav a {
-    color: rgb(106, 22, 22);
+  
     font-size: 1em;
     padding: 0.1em 1em;
   }
