@@ -428,8 +428,8 @@ input[type=submit] {
 
 
 .logosvg{
-  width: 100px;
-  left: 100px;
+  width: 200px;
+  left: 00px;
 }
 
 
@@ -483,19 +483,19 @@ input[type=submit] {
 
 @keyframes logoAnimation {
   0% {
-    transform: translateY(0px) translateX(3px);
+    transform: translateY(0px) rotate(0deg);
   }
   25% {
-    transform: translateY(0px) translateX(3px);
+    transform: translateY(2px) rotate(-1deg);
   }
   50% {
-    transform: translateY(0px) translateX(4px);
+    transform: translateY(3px) rotate(0deg);
   }
   75% {
-    transform: translateY(0px) translateX(5px);
+    transform: translateY(2px) rotate(-1deg);
   }
   100% {
-    transform: translateY(0px) translateX(0px);
+    transform: translateY(0px) rotate(0deg);
   }
 }
 
