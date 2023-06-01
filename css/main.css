@@ -238,6 +238,39 @@ h2 {
 
 
 
+    #circle {
+      animation-name: blurFadeAnimation;
+      animation-duration: 4s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+    }
+
+    #circle_2{
+
+      animation-name: blurFadeAnimation;
+      animation-duration: 4s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+    }
+
+
+    @keyframes blurFadeAnimation {
+      0% {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(0);
+      }
+      50% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(100px);
+      }
+      100% {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(0);
+      }
+    }
 
 
 
