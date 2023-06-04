@@ -20,7 +20,7 @@ body {
   width: 200px;
   height: 200px;
   position: absolute;
-  bottom: 0;
+  bottom: 90;
   left: 1em;
 }
 
@@ -31,7 +31,8 @@ body {
 }
 
 .logo {
-    position: relative;
+  display: inline-block;
+
     bottom: 0;
     left: 0;
     margin: 1em;
@@ -90,6 +91,74 @@ ul {
   justify-content: end;
   justify-items: end;
 }
+
+
+
+
+.logosvg{
+  width: 200px;
+  left: 00px;
+}
+
+
+
+
+#plant{
+  width: 100px;
+  height: 100px;
+  animation: colorChange 3s infinite;
+}
+
+#coffee {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+#lamp {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+#shoes {
+  width: 100px;
+  height: 100px;
+  animation: logoAnimation 5s ease-in-out infinite;;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes logoAnimation {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(2px) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(3px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(2px) rotate(-1deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+
+
+
 
 section {
   padding: 0.1em;
@@ -539,78 +608,6 @@ input[type=submit] {
 
 
 
-
-.logosvg{
-  width: 200px;
-  left: 00px;
-}
-
-
-
-
-#plant{
-  width: 100px;
-  height: 100px;
-  animation: colorChange 3s infinite;
-}
-
-#coffee {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-}
-
-#lamp {
-  width: 100px;
-  height: 100px;
-}
-
-
-
-
-#shoes {
-  width: 100px;
-  height: 100px;
-  animation: logoAnimation 5s ease-in-out infinite;;
-}
-
-
-
-
-
-
-@keyframes colorChange {
-  0% {
-    background-color: rgb(7, 7, 46);
-  }
-  50% {
-    background-color: red;
-  }
-  100% {
-    background-color: green;
-  }
-}
-
-
-
-
-@keyframes logoAnimation {
-  0% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  25% {
-    transform: translateY(2px) rotate(-1deg);
-  }
-  50% {
-    transform: translateY(3px) rotate(0deg);
-  }
-  75% {
-    transform: translateY(2px) rotate(-1deg);
-  }
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-}
 
 
 
