@@ -648,26 +648,27 @@
         const plant = document.getElementById("plant");
         const pot = document.getElementById("pot");
 
-        let isYellow = false; // Flag to track if the lamp is currently yellow
+        let isYellow = false; 
 
         lamp.addEventListener("click", function () {
             if (isYellow) {
-                // Change the lamp back to the default color
+                
                 lamp.style.fill = "white";
             } else {
                 const coffeeColors = ["brown", "purple", "orange"];
                 const plantColors = ["lightgreen", "green", "darkgreen"];
                 const potColors = ["blue", "yellow", "red"];
 
-                // Generate random indexes for each color array
+               
                 const coffeeIndex = Math.floor(Math.random() * coffeeColors.length);
                 const plantIndex = Math.floor(Math.random() * plantColors.length);
                 const potIndex = Math.floor(Math.random() * potColors.length);
 
-                // Set the selected colors to the coffee plant, pot, and lamp
+                
                 coffee.style.fill = coffeeColors[coffeeIndex];
                 pot.style.fill = potColors[potIndex];
-                lamp.style.fill = "rgb(255, 255, 0)"; // Use RGB value for vibrant yellow
+                plant.style.fill = plantColors[plantIndex];
+                lamp.style.fill = "rgb(255, 255, 0)"; 
             }
 
             isYellow = !isYellow; // Toggle the flag
