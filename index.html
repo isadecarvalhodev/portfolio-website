@@ -27,7 +27,7 @@
 
             <div class="logosvg" href="resorc/finalPort.svg" class="logo">
 
-                <svg viewBox="0 0 1080 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="mySvg" viewBox="0 0 1080 900" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="undraw_reading_time_re_phf7 1" clip-path="url(#clip0_0_1)">
                         <path id="Vector"
                             d="M680.151 553.838H520.885V548.95C520.885 544.707 522.571 540.637 525.571 537.637C528.572 534.636 532.642 532.95 536.885 532.95H664.151C668.394 532.95 672.464 534.636 675.464 537.637C678.465 540.637 680.151 544.707 680.151 548.95V553.838Z"
@@ -643,36 +643,44 @@
 
 
 
+        const svg = document.getElementById("mySvg");
         const lamp = document.getElementById("lamp");
-        const coffee = document.getElementById("coffee");
+        const coffee = document.getElementById("Vector_20");
         const plant = document.getElementById("plant");
         const pot = document.getElementById("pot");
 
-        let isYellow = false; 
+        let isYellow = false;
 
-        lamp.addEventListener("click", function () {
-            if (isYellow) {
-                
-                lamp.style.fill = "white";
+        svg.addEventListener("click", function (event) {
+            if (event.target === coffee) {
+                if (isYellow) {
+                    coffee.setAttribute("fill", "white");
+                } else {
+                    coffee.setAttribute("fill", "yellow");
+                }
             } else {
-                const coffeeColors = ["brown", "purple", "orange"];
-                const plantColors = ["lightgreen", "green", "darkgreen"];
-                const potColors = ["blue", "yellow", "red"];
+                const coffeeColors = ["brown", "purple", "orange", "black", "gray", "pink"];
+                const plantColors = ["lightgreen", "green", "darkgreen", "lime", "olive", "teal"];
+                const potColors = ["blue", "yellow", "red", "purple", "pink", "silver"];
+                const lampColors = ["yellow", "brightyellow", "gold", "amber", "orange", "bronze"];
 
-               
                 const coffeeIndex = Math.floor(Math.random() * coffeeColors.length);
                 const plantIndex = Math.floor(Math.random() * plantColors.length);
                 const potIndex = Math.floor(Math.random() * potColors.length);
+                const lampIndex = Math.floor(Math.random() * lampColors.length);
 
-                
-                coffee.style.fill = coffeeColors[coffeeIndex];
-                pot.style.fill = potColors[potIndex];
-                plant.style.fill = plantColors[plantIndex];
-                lamp.style.fill = "rgb(255, 255, 0)"; 
+                coffee.setAttribute("fill", coffeeColors[coffeeIndex]);
+                pot.setAttribute("fill", potColors[potIndex]);
+                plant.setAttribute("fill", plantColors[plantIndex]);
+                lamp.setAttribute("fill", lampColors[lampIndex]);
+
+                isYellow = !isYellow;
             }
-
-            isYellow = !isYellow; // Toggle the flag
         });
+
+
+
+
 
 
 
