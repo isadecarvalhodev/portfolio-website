@@ -394,7 +394,14 @@ h2 {
   background: rgb(172, 178, 174);
   color: #3f684c;
   display: flex;
+  margin-bottom: 2em;
 }
+
+ .icon {
+  width: 10em;
+  
+}
+
 
 ul {
   margin: 0;
@@ -597,7 +604,20 @@ input[type=submit] {
 }
 
 
-.skillsicone {
+
+
+.container-skills {
+  position: relative;
+  width: 30em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0em;
+
+
+}
+
+.icon {
   width: 50px;
   height: 50px;
 }
