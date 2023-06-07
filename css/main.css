@@ -399,9 +399,207 @@ h2 {
 
  .icon {
   width: 10em;
+}
+.icon path {
+  fill: transparent;
+  stroke: 10;
+  stroke: #25033f ;
   
 }
 
+.icon.java path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+  fill: transparent;
+}
+
+.icon.java:hover path {
+  animation: animate-java 2s linear forwards;
+}
+@keyframes animate-java {
+  0% 
+  {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  40%
+  {
+    stroke-dashoffset: 100;
+    fill: transparent;
+  }
+  80% 
+  {
+    stroke-dashoffset: 200;
+    fill: transparent;
+  }
+  100%
+  {
+    stroke-dashoffset: 300;
+    fill: #000000;
+  }
+}
+
+
+
+.icon.js path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+  fill: transparent;
+}
+
+.icon.js:hover path {
+  animation: animate-js 2s linear forwards;
+}
+@keyframes animate-js {
+  0% 
+  {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  40%
+  {
+    stroke-dashoffset: 150;
+    fill: transparent;
+  }
+  80% 
+  {
+    stroke-dashoffset: 250;
+    fill: transparent;
+  }
+  100%
+  {
+    stroke-dashoffset: 400;
+    fill: #000000;
+  }
+}
+
+.icon.html path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+  fill: transparent;
+}
+
+.icon.html:hover path {
+  animation: animate-html 2s linear forwards;
+}
+@keyframes animate-html {
+  0% 
+  {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  40%
+  {
+    stroke-dashoffset: 100;
+    fill: transparent;
+  }
+  80% 
+  {
+    stroke-dashoffset: 200;
+    fill: transparent;
+  }
+  100%
+  {
+    stroke-dashoffset: 300;
+    fill: #000000;
+  }
+}
+
+.icon.css path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+  fill: transparent;
+}
+
+.icon.css:hover path {
+  animation: animate-css 2s linear forwards;
+}
+@keyframes animate-css {
+  0% 
+  {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  40%
+  {
+    stroke-dashoffset: 100;
+    fill: transparent;
+  }
+  80% 
+  {
+    stroke-dashoffset: 200;
+    fill: transparent;
+  }
+  100%
+  {
+    stroke-dashoffset: 300;
+    fill: #000000;
+  }
+}
+
+.icon.sql path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+  fill: transparent;
+}
+
+.icon.sql:hover path {
+  animation: animate-sql 2s linear forwards;
+}
+@keyframes animate-sql {
+  0% 
+  {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  40%
+  {
+    stroke-dashoffset: 100;
+    fill: transparent;
+  }
+  80% 
+  {
+    stroke-dashoffset: 200;
+    fill: transparent;
+  }
+  100%
+  {
+    stroke-dashoffset: 300;
+    fill: #000000;
+  }
+}
+
+.icon.git path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+  fill: transparent;
+}
+
+.icon.git:hover path {
+  animation: animate-git 2s linear forwards;
+}
+@keyframes animate-git {
+  0% 
+  {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  40%
+  {
+    stroke-dashoffset: 100;
+    fill: transparent;
+  }
+  80% 
+  {
+    stroke-dashoffset: 200;
+    fill: transparent;
+  }
+  100%
+  {
+    stroke-dashoffset: 300;
+    fill: #000000;
+  }
+}
 
 ul {
   margin: 0;
