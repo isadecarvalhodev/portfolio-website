@@ -401,9 +401,9 @@ h2 {
   width: 10em;
 }
 .icon path {
-  fill: transparent;
+  fill: #000000;
   stroke: 10;
-  stroke: #25033f ;
+  stroke: #000000 ;
   
 }
 
@@ -415,6 +415,12 @@ h2 {
 
 .icon.java:hover path {
   animation: animate-java 2s linear forwards;
+}
+
+.icon.java:not(:hover) path {
+  
+  stroke-dashoffset: 100; 
+  fill: #000000; 
 }
 @keyframes animate-java {
   0% 
@@ -450,6 +456,12 @@ h2 {
 .icon.js:hover path {
   animation: animate-js 2s linear forwards;
 }
+
+.icon.js:not(:hover) path {
+  
+  stroke-dashoffset: 100; 
+  fill: #000000; 
+}
 @keyframes animate-js {
   0% 
   {
@@ -468,20 +480,32 @@ h2 {
   }
   100%
   {
-    stroke-dashoffset: 400;
+    stroke-dashoffset: 300;
     fill: #000000;
   }
 }
 
+
+
 .icon.html path {
-  stroke-dasharray: 100;
+  
+  stroke-dasharray: 150;
   stroke-dashoffset: 0;
   fill: transparent;
+  animation-fill-mode: forwards;
 }
 
 .icon.html:hover path {
-  animation: animate-html 2s linear forwards;
+  animation: animate-html 1.2s linear forwards;
 }
+
+.icon.html:not(:hover) path {
+  
+  stroke-dashoffset: 700; 
+  fill: #000000; 
+}
+
+
 @keyframes animate-html {
   0% 
   {
@@ -490,17 +514,17 @@ h2 {
   }
   40%
   {
-    stroke-dashoffset: 100;
+    stroke-dashoffset: 250;
     fill: transparent;
   }
   80% 
   {
-    stroke-dashoffset: 200;
+    stroke-dashoffset: 450;
     fill: transparent;
   }
   100%
   {
-    stroke-dashoffset: 300;
+    stroke-dashoffset: 650;
     fill: #000000;
   }
 }
@@ -512,7 +536,13 @@ h2 {
 }
 
 .icon.css:hover path {
-  animation: animate-css 2s linear forwards;
+  animation: animate-css 1.2s linear forwards;
+}
+
+.icon.css:not(:hover) path {
+  
+  stroke-dashoffset: 700; 
+  fill: #000000; 
 }
 @keyframes animate-css {
   0% 
@@ -522,17 +552,17 @@ h2 {
   }
   40%
   {
-    stroke-dashoffset: 100;
+    stroke-dashoffset: 250;
     fill: transparent;
   }
   80% 
   {
-    stroke-dashoffset: 200;
+    stroke-dashoffset: 450;
     fill: transparent;
   }
   100%
   {
-    stroke-dashoffset: 300;
+    stroke-dashoffset: 650;
     fill: #000000;
   }
 }
@@ -544,7 +574,13 @@ h2 {
 }
 
 .icon.sql:hover path {
-  animation: animate-sql 2s linear forwards;
+  animation: animate-sql 1.5s linear forwards;
+}
+
+.icon.sql:not(:hover) path {
+  
+  stroke-dashoffset: 800; 
+  fill: #000000; 
 }
 @keyframes animate-sql {
   0% 
@@ -554,17 +590,17 @@ h2 {
   }
   40%
   {
-    stroke-dashoffset: 100;
+    stroke-dashoffset: 250;
     fill: transparent;
   }
   80% 
   {
-    stroke-dashoffset: 200;
+    stroke-dashoffset: 450;
     fill: transparent;
   }
   100%
   {
-    stroke-dashoffset: 300;
+    stroke-dashoffset: 650;
     fill: #000000;
   }
 }
@@ -577,6 +613,12 @@ h2 {
 
 .icon.git:hover path {
   animation: animate-git 2s linear forwards;
+}
+
+.icon.git:not(:hover) path {
+  
+  stroke-dashoffset: 100; 
+  fill: #000000; 
 }
 @keyframes animate-git {
   0% 
