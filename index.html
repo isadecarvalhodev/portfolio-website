@@ -698,19 +698,28 @@
             <div class="contact-left">
                 <h2>Contact</h2>
 
-                <form action="" id="contact-form">
+                <form action="https://formsubmit.co/isadecarvalhodev@gmail.com" method="POST">
+
+                    <input type="hidden" name="_captcha" value="false">
+
+
 
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name">
+                    
 
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email">
+                   
 
                     <label for="message">Message</label>
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
 
 
                     <input type="submit" class="send-menssage-cta" value="Send mensage">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/pages/messagesend.html">
+
+
 
                 </form>
 
@@ -720,16 +729,6 @@
 
     </section>
 
-    <footer>
-        <p>
-
-
-
-
-
-        </p>
-
-    </footer>
 
     <script>
 
@@ -749,7 +748,22 @@
 
 
 
-        const form = document.getElementById("contact-form");
+        /*function sendEmail() {
+            Email.send({
+                SecureToken: "46418eed-138e-4c59-ad7f-76be054b6fc3",
+                To: 'isadecarvalhodev@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Enquiry",
+                Body: "Name: " + document.getElementById("name").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Message: " + document.getElementById("message").value
+
+            }).then(
+                message => alert("Message Sent!")
+            );
+        }*/
+
+        /*const form = document.getElementById("contact-form");
 
         form.addEventListener("submit", function (event) {
             event.preventDefault();
@@ -785,7 +799,7 @@
                 .catch(error => {
                     'something when wrong! '
                 });
-        });
+        });*/
 
 
 
