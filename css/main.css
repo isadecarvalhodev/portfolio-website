@@ -667,8 +667,9 @@ ul li::before {
 
 
 .subtext {
-  font-size: 1.5em;
-  font-weight: 300;
+  font-size: 1.0em;
+  font-weight: 30;
+
 }
 
 
@@ -727,7 +728,13 @@ hr {
   background-color: #9e4dce;
 }
 
-
+.icon-projects{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0em;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 
 
 
@@ -926,6 +933,7 @@ input[type=submit] {
     box-shadow: 5px 5px 20px black;
   }
 }
+
 
 
 
