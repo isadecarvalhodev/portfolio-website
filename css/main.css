@@ -236,19 +236,15 @@ h2 {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      height: 30em;
+    
     }
     
     .svg-container {
-      width: 200%;
+      width: 100%;
       height: 100%;
       
     }
-    
-    .svg-container svg {
-      transform: scale(0.7);
-    
-    }
+ 
     
     #swingpart {
       position: absolute;
@@ -934,7 +930,13 @@ input[type=submit] {
   }
 }
 
-
+.icon-projects{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0em;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 
 
 
