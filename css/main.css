@@ -39,6 +39,32 @@ body {
   }
 
 
+  .invert {
+    display: inline-block;
+    animation-name: flip-upside-down;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    transform-style: preserve-3d;
+  }
+
+  @keyframes flip-upside-down {
+    0% {
+      transform: rotateX(0deg);
+    }
+    100% {
+      transform: rotateX(180deg);
+    }
+  }
+  
+
+  
+  
+
+
+
+
 .navbar nav {
   display: none;
   z-index: 99;
