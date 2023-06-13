@@ -235,14 +235,12 @@ h2 {
 .primary-cta  {
   background: rgb(243, 247, 243);
   color: rgb(0, 0, 0);
- 
   padding: 0.6em 1.3em 0.6em;
-
-  
   font-size: 1.1em;
   border-radius: 5em;
   font-weight: 700;
   display: inline-block;
+  
 }
 
 
