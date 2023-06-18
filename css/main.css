@@ -708,7 +708,9 @@ h2 {
 .projects-container {
   display: flex;
   justify-content: space-around;
-  gap: 2em;
+  gap: 2.5em;
+  padding: 2.5em;
+  text-align: left;
 }
 
 .project-card {
