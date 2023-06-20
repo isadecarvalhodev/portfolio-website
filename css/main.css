@@ -183,7 +183,7 @@ ul {
 
 
 section {
-  padding: 5em 1em;
+  padding: 0.1em 1em;
   margin: 0.2em;
 
 }
@@ -201,7 +201,7 @@ h2 {
 }
 
 .left-col {
-  
+
   align-items: left;
   color: rgb(43, 40, 40);
   letter-spacing: 0.3em;
