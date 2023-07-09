@@ -11,7 +11,7 @@
 ###
 <p align="center"> Technologies: HTML, CSS, SASS, SVG, and JavaScript <br></p>
 
-<p align="center"> ⛏ Working project, coming soon.⛏
+<p align="center"> ⛏ Working project, coming soon...⛏
 </p>
 
   <p align="center"> 👀 Live here: https://isadecarvalhodev.github.io/portfolio-website/
